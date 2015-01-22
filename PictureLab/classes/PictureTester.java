@@ -51,6 +51,69 @@ public class PictureTester
     swan.explore();
   }
   
+  public static void testArms()
+  {
+      Picture snowman = new Picture("snowman.jpg");
+      snowman.mirrorArms();
+      snowman.explore();
+      
+  }
+  
+  public static void testKeepBlue()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.keepBlue();
+    beach.explore();
+  }
+  
+  public static void testGray()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.gray();
+    beach.explore();
+  }
+  
+  public static void testFish()
+  {
+    Picture beach = new Picture("water.jpg");
+    beach.explore();
+    beach.fish();
+    beach.explore();
+  }
+  
+  public static void testCrop()
+  {
+    Picture beach = new Picture("beach.jpg");
+    Picture snowman = new Picture("snowman.jpg");
+    beach.copy2(snowman, 10, 200, 10, 200 ,100, 100);
+    beach.explore();
+  }
+  
+  public static void testScale()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.scale().explore();
+  }
+  
+  public static void testCollage2()
+  {
+    Picture shrek = new Picture(464, 434);
+    shrek.createCollage2();
+    shrek.explore();
+    
+  }
+  
+  public static void rotate()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.rotate(beach).explore();
+   
+  }
+  
+  
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -58,7 +121,9 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    testZeroBlue();
+    //testZeroBlue();
+    //testKeepBlue();
+    testCollage2();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
