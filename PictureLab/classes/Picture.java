@@ -85,7 +85,8 @@ public class Picture extends SimplePicture
 
     }
 
-    /** Method to set the blue to 0 */
+    /** Method to set the blue to 0 
+     */
     public void zeroBlue()
     {
         Pixel[][] pixels = this.getPixels2D();
@@ -98,6 +99,8 @@ public class Picture extends SimplePicture
         }
     }
     
+    /** Method to set all colors other than blue to 0 
+     */
     public void keepBlue()
     {
         Pixel[][] pixels = this.getPixels2D();
@@ -111,6 +114,8 @@ public class Picture extends SimplePicture
         }
     }
     
+    /** Method to make all pixels grayscale 
+     */
     public void gray()
     {
         Pixel[][] pixels = this.getPixels2D();
@@ -126,6 +131,8 @@ public class Picture extends SimplePicture
         }
     }
     
+    /** Method to triple red  
+     */
     public void fish()
     {
         Pixel[][] pixels = this.getPixels2D();
@@ -219,6 +226,8 @@ public class Picture extends SimplePicture
         }
     }
     
+    /** Method to mirror snowman arms to 4 
+     */
     public void mirrorArms()
     {
         int mirrorPoint = 193;
@@ -312,6 +321,8 @@ public class Picture extends SimplePicture
         this.write("collage.jpg");
     }
     
+    /** creates collage from shrek pictures
+     */
     public void createCollage2()
     {
         Pixel[][] shrexels = this.getPixels2D();
@@ -338,6 +349,8 @@ public class Picture extends SimplePicture
         
     }
     
+    /** Method to apply a sepia filter 
+     */
     public void sepia()
     {
         this.gray();
@@ -393,6 +406,7 @@ public class Picture extends SimplePicture
             }
         }
     }
+    
     
     public void copy2(Picture sourcePicture, int startSourceRow, int endSourceRow, int startSourceCol, int endSourceCol,
          int startDestRow, int startDestCol )
